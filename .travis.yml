@@ -5,4 +5,4 @@ jdk:
   - oraclejdk9
   - openjdk8
 
-script: mvn clean verify
+script: mvn clean verify javadoc:javadoc
