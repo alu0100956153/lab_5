@@ -5,4 +5,10 @@ jdk:
   - oraclejdk9
   - openjdk8
 
-script: mvn clean verify javadoc:javadoc
+script: mvn clean verify doxygen:generate
+
+
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install doxygen
+  
